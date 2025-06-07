@@ -246,3 +246,50 @@ min-width: 100vw;
 .sub-section ul li {
     transition: transform 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+    .category-section ul li,
+    .arrival-section ul li {
+        width: 45%;
+        height: auto;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .banner-section img,
+    .banner-2 img,
+    .footer img {
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .category-section ul li,
+    .arrival-section ul li {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .products ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discount-section img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+.modal-content {
+    width: 90%;
+    max-width: 400px;
+}
